@@ -17,7 +17,8 @@ body{
 }
 
 .my-form{
-	padding:20px;
+    padding:20px;
+    background-color: #ccc;
 }
 
 .my-form .form-group{
