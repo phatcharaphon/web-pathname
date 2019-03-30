@@ -42,53 +42,69 @@
         <h4 class="display-3">(+66) - 918 - 521600</h4>
     </div>
 
-    <div class="jumbotron">
-        <form width="75%">
+    <div class="jumbotron container">
+        <form width="75%" id="contact-form">
             <fieldset>
                 <div class="form-group">
-                    <label class="display-5" for="exampleInputEmail1">Subject</label>
-                    <input width="50%" type="email" class="form-control" id="exampleInputEmail1"
-                        aria-describedby="emailHelp" placeholder="Subject">
+                    <label class="display-5" for="subject">Subject</label>
+                    <input width="50%" type="text" class="form-control" id="subject"
+                         placeholder="Subject" >
                 </div>
                 <div class="form-group">
-                    <label class="display-5" for="exampleTextarea">Massage</label>
-                    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                    <label class="display-5">Massage</label>
+                    <textarea class="form-control" id="massage" rows="3"></textarea>
                 </div>
                 <fieldset class="form-group">
-                    <legend class="display-5">Radio buttons</legend>
+                    <legend class="display-5">Gender</legend>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1"
-                                value="option1" checked="">
+                            <input type="radio" class="form-check-input" name="optionsRadios" id="genderm"
+                                value="male" checked="">
                             Male
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2"
-                                value="option2">
+                            <input type="radio" class="form-check-input" name="optionsRadios" id="genderf"
+                                value="female">
                             Female
                         </label>
                     </div>
                 </fieldset>
                 <div class="form-group">
-                    <label class="display-5" for="exampleInputEmail1">Phone</label>
-                    <input width="50%" type="email" class="form-control" id="exampleInputEmail1"
+                    <label class="display-5">Phone</label>
+                    <input width="50%" type="text" class="form-control" id="phone"
                         aria-describedby="emailHelp" placeholder="0xx-xxx-xxxx">
                 </div>
                 <div class="form-group">
-                    <label class="display-5" for="exampleInputEmail1">Email</label>
-                    <input width="50%" type="email" class="form-control" id="exampleInputEmail1"
+                    <label class="display-5" >Email</label>
+                    <input width="50%" type="email" class="form-control" id="email"
                         aria-describedby="emailHelp" placeholder="email@example.com">
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </fieldset>
         </form>
+
+        <table class="table table-striped mt-5">
+            <thead>
+              <tr>
+                <th>Subject</th>
+                <th>Massage</th>
+                <th>Gender</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th></th>
+              </tr>
+            </thead>
+
+            <tbody id="contact-list"></tbody>
+          </table>
     </div>
     <p class="display-5" align="center">Phatcharaphon Phromjom -
         <a href="mailto:phatcharaphon_p@cmu.ac.th">phatcharaphon_p@cmu.ac.th</a>
         - (+66)-918-521600</p>
 
+    <script src="main.js"></script>
 </body>
 
 </html>
