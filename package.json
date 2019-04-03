@@ -1,0 +1,22 @@
+{
+  "name": "web04-pathname",
+  "version": "1.0.0",
+  "description": "Create pathname for web",
+  "main": "app.js",
+  "scripts": {
+    "start" : "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phatcharaphon/web04-pathname.git"
+  },
+  "author": "Phatcharaphon Phromjom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phatcharaphon/web04-pathname/issues"
+  },
+  "homepage": "https://github.com/phatcharaphon/web04-pathname#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
